@@ -51,7 +51,7 @@
     "machineLabel": "Generic Marlin1 machine",
     "machineDescription": "Use this for machines based on Marlin 1.x firmware",
     "machineAbout": "marlin1.md",
-    "machineLogo": "marlin.png",
+    "machineLogo": "marlin1.png",
     "settings": {
       "machineWidth": 300,
       "machineHeight": 200,
@@ -77,7 +77,7 @@
     "machineLabel": "Generic Marlin2 machine",
     "machineDescription": "Use this for machines based on Marlin 2.0.6+ firmware",
     "machineAbout": "marlin2.md",
-    "machineLogo": "marlin.png",
+    "machineLogo": "marlin2.png",
     "settings": {
       "machineWidth": 300,
       "machineHeight": 200,
