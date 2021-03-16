@@ -1,3 +1,3 @@
-### About FabCreators FabKit Laser
+### FabCreators FabKit Laser
 
-- [FabCreator Community](http://community.fabcreator.com/c/laserweb)
+- <a href="https://community.fabcreator.com/" target="_blank">FabCreator Community</a>
