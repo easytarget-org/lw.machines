@@ -3,12 +3,10 @@
     "machineLabel": "Emblaser 2",
     "machineDescription": "Use this if you have an Emblaser 2 from Darkly Labs",
     "machineAbout": "emblaser2.md",
-    "helpUrl": "https://darklylabs.zendesk.com/hc/en-us/community/topics/115000181507-Laserweb",
-    "tutorialsUrl": "https://darklylabs.zendesk.com/hc/en-us/categories/202585917-Tutorials",
+    "machineLogo": "emblaser2.png",
     "settings": {
       "machineWidth": 500,
       "machineHeight": 300,
-      "machineBeamDiameter": 0.2,
       "machineOriginX": 0,
       "machineOriginY": 0,
       "machineFeedRange": {
@@ -76,8 +74,6 @@
       "toolVideoResolution": null,
       "toolWebcamUrl": "",
       "toolFeedUnits": "mm/min",
-      "toolTestSValue": 1,
-      "toolTestDuration": 0,
       "gcodeStart": "G21\nG90\n",
       "gcodeMillStart": "G21\nG90\n",
       "gcodeEnd": "M2\nG0Z50\nG0X0Y300\nM911G4P500M912G4P100M911G4P100M912G4P50M911G4P100M912",

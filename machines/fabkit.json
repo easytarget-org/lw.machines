@@ -3,6 +3,7 @@
         "machineLabel": "FabKit",
         "machineDescription": "Use this if you have an FabKit from FabCreator",
         "machineAbout": "fabkit.md",
+        "machineLogo": "fabkit.png",
         "settings": {
             "machineWidth": 680,
             "machineHeight": 450,
@@ -54,8 +55,6 @@
             "toolVideoResolution": "720p(HD)",
             "toolWebcamUrl": "",
             "toolFeedUnits": "mm/s",
-            "toolTestSValue": 1,
-            "toolTestDuration": 0,
             "gcodeStart": "G21         ; Set units to mm\nG90         ; Absolute positioning\nM3           ; Laser On\nM106       ; Compressor On",
             "gcodeMillStart": "G21         ; Set units to mm\nG90         ; Absolute positioning\nM3           ; Laser On\nM106       ; Compressor On",
             "gcodeEnd": "M5                       ;Laser off\nG28.2XY              ; Home X & Y\nM107                   ;Compressor Off",

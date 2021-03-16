@@ -1,78 +1,55 @@
 {
   "*Grbl-ESP32": {
-    "machineLabel": "Grbl-ESP32",
-    "machineDescription": "For machines equipped with GRBL-ESP32 driven controllers",
-    "machineAbout": "grbl-esp32.md",
-    "machineLogo": "grbl-esp32.svg",
+    "machineLabel":          "Grbl-ESP32",
+    "machineDescription":    "For machines equipped with GRBL-ESP32 controllers",
+    "machineAbout":          "grbl-esp32.md",
+    "machineLogo":           "grbl-esp32.svg",
     "settings": {
-      "showMachine": true,
-      "machineWidth": 300,
-      "machineHeight": 200,
-      "machineBeamDiameter": 0.2,
-      "machineBurnWhite": false,
-      "machineBottomLeftX": -300,
-      "machineBottomLeftY": -200,
-      "machineFeedRange": {
-        "XY": {"min": 1, "max": 50000},
-        "Z": {"min": 1, "max": 50000},
-        "A": {"min": 1, "max": 50000},
-        "S": {"min": 0, "max": 100}
-      },
-      "machineXYProbeOffset": 0,
-      "machineZEnabled": true,
-      "machineZToolOffset": 0,
-      "machineRapidZ": 2,
-      "machineZProbeOffset": 0,
-      "machineAEnabled": false,
-      "machineBlowerEnabled": false,
-      "machineFluidEnabled": false,
-      "gcodeFilename": "gcode-%y%m%d-%H%M",
-      "gcodeExtension": ".gcode",
-      "workspaceFilename": "Laserweb-Workspace-%y%m%d-%H%M",
-      "toolCreateEmptyOps": true,
-      "toolTestSValue": 1,
-      "toolTestDuration": 0,
-      "gcodeStart": "$Spindle/Type=LASER\nG21       ; Set units to mm\nG90       ; Absolute positioning\nM4 S0     ; Laser on, zero power",
-      "gcodeMillStart": "$Spindle/Type=PWM\nG21       ; Set units to mm\nG90       ; Absolute positioning\nM3 S0     ; Spindle on, zero power",
-      "gcodeEnd": "M5        ; Switch Laser off\nM2        ; End\n",
-      "gcodeMillEnd": "M5        ; Switch Spindle off\nM2        ; End\n",
-      "gcodeHoming": "$H",
-      "gcodeGenerator": "default",
+      "showMachine":         true,
+      "machineWidth":        300,
+      "machineHeight":       200,
+      "machineBurnWhite":    false,
+      "machineBottomLeftX":  -300,
+      "machineBottomLeftY":  -200,
+      "machineFeedRange":{   "XY": {"min": 1, "max": 50000},
+                             "Z":  {"min": 1, "max": 50000},
+                             "A":  {"min": 1, "max": 50000},
+                             "S":  {"min": 0, "max": 100}
+                         },
+      "gcodeFilename":       "gcode-%y%m%d-%H%M",
+      "gcodeExtension":      ".gcode",
+      "workspaceFilename":   "Laserweb-Workspace-%y%m%d-%H%M",
+      "gcodeStart":          "$Spindle/Type=LASER\nG21       ; Set units to mm\nG90       ; Absolute positioning\nM4 S0     ; Laser on, zero power",
+      "gcodeMillStart":      "$Spindle/Type=PWM\nG21       ; Set units to mm\nG90       ; Absolute positioning\nM3 S0     ; Spindle on, zero power",
+      "gcodeEnd":            "M5        ; Switch Laser off\nM2        ; End\n",
+      "gcodeMillEnd":        "M5        ; Switch Spindle off\nM2        ; End\n",
+      "gcodeHoming":         "$H",
       "gcodeLaserIntensity": "S",
-      "gcodeLaserIntensitySeparateLine": false,
-      "gcodeSMinValue": 0,
-      "gcodeSMaxValue": 100,
-      "gcodeCheckSizePower": 4,
-      "gcodeToolTestPower": 4,
-      "gcodeToolTestDuration": 0,
-      "gcodeConcurrency": 3,
-      "gcodeSegmentLength": 0,
-      "gcodeCurvePrecision": 0.1,
-      "connectBaud": "115200",
-      "connectReset": true,
-      "connectQuery": "",
+      "gcodeSMinValue":      0,
+      "gcodeSMaxValue":      100,
+      "connectBaud":         "115200",
+      "connectReset":        true,
+      "connectQuery":        "",
       "macros": {
         "*GotoXY0": {
-          "label": "Goto XY zero",
-          "gcode": "G0 X0Y0",
-          "keybinding": "",
-          "_locked": false
+                             "label":      "Goto XY zero",
+                             "gcode":      "G0 X0Y0",
+                             "keybinding": ""
         },
-        "*LaserOff": {"keybinding": "", "label": "STOP tool", "gcode": "M5"},
         "35239c0a-7eec-4c9a-b37b-07f14fdcbae1": {
-          "keybinding": "",
-          "label": "Goto Z zero",
-          "gcode": "G0 Z0"
+                             "label":      "Goto Z zero",
+                             "gcode":      "G0 Z0",
+                             "keybinding": ""
         },
         "ce5b6e7e-486e-4da1-8ed3-787184b3e2ff": {
-          "keybinding": "",
-          "label": "Step Perm",
-          "gcode": "$1=255"
+                             "label":      "Step Perm",
+                             "gcode":      "$1=255",
+                             "keybinding": ""
         },
         "2d2bd4dc-31ca-4641-b105-c21b2e2a40f9": {
-          "keybinding": "",
-          "label": "Step Loose",
-          "gcode": "$1=250"
+                             "label":      "Step Loose",
+                             "gcode":      "$1=250",
+                             "keybinding": ""
         }
       }
     }
