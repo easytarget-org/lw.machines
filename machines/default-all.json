@@ -64,8 +64,8 @@
       "gcodeEnd": "",
       "gcodeMillEnd": "",
       "gcodeHoming": "",
-      "gcodeToolOn": "",
-      "gcodeToolOff": "",
+      "gcodeToolOn": "M3",
+      "gcodeToolOff": "M5",
       "gcodeSMaxValue": 1000,
       "gcodeLaserIntensitySeparateLine": true,
       "gcodeGenerator": "marlin",
@@ -93,8 +93,8 @@
       "gcodeToolOn": "",
       "gcodeToolOff": "",
       "gcodeSMaxValue": 1000,
-      "gcodeLaserIntensitySeparateLine": true,
-      "gcodeGenerator": "marlin",
+      "gcodeLaserIntensitySeparateLine": false,
+      "gcodeGenerator": "default",
       "toolGridWidth": 400,
       "toolGridHeight": 300
     }
