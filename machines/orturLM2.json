@@ -1,0 +1,53 @@
+{
+  "*orturLM2": {
+    "machineLabel": "Ortur Laser Master 2"
+    "machineDescription": "Use this if you have an Laser Master 2 from Ortur",
+    "machineAbout": "orturLM2.md",
+    "machineLogo": "orturLM2.png",
+    "settings": {
+      "showMachine": true,
+      "machineWidth": 400,
+      "machineHeight": 400,
+      "machineBottomLeftX": 0,
+      "machineBottomLeftY": 0,
+      "machineFeedRange": {
+        "XY": {"min": 1, "max": 50000},
+        "Z": {"min": 1, "max": 50000},
+        "A": {"min": 1, "max": 50000},
+        "S": {"min": 0, "max": 30000}
+      },
+      "machineZEnabled": false,
+      "machineAEnabled": false,
+      "machineBlowerEnabled": false,
+      "gcodeFilename": "gcode-%y%m%d-%H%M",
+      "gcodeExtension": ".gcode",
+      "workspaceFilename": "Laserweb-Workspace-%y%m%d-%H%M",
+      "gcodeStart": "G21         ; Set units to mm\r\nG90         ; Absolute positioning\r\n",
+      "gcodeEnd": "M5          ; Switch tool offEnd\r\n",
+      "gcodeHoming": "$H",
+      "gcodeGenerator": "default",
+      "gcodeToolOn": "M3",
+      "gcodeToolOff": "M5",
+      "gcodeLaserIntensity": "S",
+      "gcodeLaserIntensitySeparateLine": false,
+      "gcodeSMinValue": 0,
+      "gcodeSMaxValue": 1000,
+      "gcodeCheckSizePower": 4,
+      "gcodeToolTestPower": 4,
+      "gcodeToolTestDuration": 1000,
+      "connectBaud": "115200",
+      "macros": {
+        "*GotoXY0": {
+          "label": "Goto XY zero",
+          "gcode": "G0 X0Y0",
+          "keybinding": "ctrl+f1",
+        },
+        "*LaserOff": {
+          "label": "LASER OFF",
+          "gcode": "M5",
+          "keybinding": "ctrl+f2",
+        }
+      }
+    }
+  }
+}
