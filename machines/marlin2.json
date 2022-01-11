@@ -1,10 +1,10 @@
 {
-  "*gen_other": {
-    "machineLabel": "Generic Other machine",
-    "machineDescription": "A generic machine template for you to customize as you wish",
+  "*gen_marlin2": {
+    "machineLabel": "Generic Marlin2 machine",
+    "machineDescription": "Use this for machines based on Marlin 2.0.6+ firmware",
     "settings": {
-      "firmwareLogo": "default.png",
-      "firmwareURL": "https://forum.makerforums.info/c/laserweb-cncweb/",
+      "firmwareLogo": "marlin2.png",
+      "firmwareURL": "https://marlinfw.org/",
       "machineWidth": 300,
       "machineHeight": 200,
       "toolImagePosition": "BL",
@@ -19,6 +19,8 @@
       "gcodeToolOn": "",
       "gcodeToolOff": "",
       "gcodeSMaxValue": 1000,
+      "gcodeLaserIntensitySeparateLine": false,
+      "gcodeGenerator": "default",
       "toolGridWidth": 400,
       "toolGridHeight": 300,
       "macros": {

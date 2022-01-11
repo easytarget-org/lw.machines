@@ -1,10 +1,10 @@
 {
-  "*Grbl-ESP32": {
-    "machineLabel":          "Grbl-ESP32",
-    "machineDescription":    "For machines equipped with GRBL-ESP32 controllers",
+  "*FluidNC": {
+    "machineLabel":          "FluidNC",
+    "machineDescription":    "For machines equipped with FluidNC controllers",
     "settings": {
-      "firmwareURL":         "https://github.com/bdring/Grbl_Esp32/wiki",
-      "firmwareLogo":           "grbl-esp32.png",
+      "firmwareLogo":        "fluidnc.png",
+      "firmwareURL":         "https://github.com/bdring/FluidNC/wiki",
       "showMachine":         true,
       "machineWidth":        300,
       "machineHeight":       200,

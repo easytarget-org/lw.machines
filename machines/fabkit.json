@@ -1,79 +1,91 @@
 {
-    "*FabKit": {
-        "machineLabel": "FabKit",
-        "machineDescription": "Use this if you have an FabKit from FabCreator",
-        "machineAbout": "fabkit.md",
-        "machineLogo": "fabkit.png",
-        "settings": {
-            "machineWidth": 680,
-            "machineHeight": 450,
-            "machineBeamDiameter": 0.1,
-            "machineZEnabled": false,
-            "machineZToolOffset": 0,
-            "machineBlowerEnabled": false,
-            "machineAEnabled": false,
-            "machineBlowerGcodeOn": "",
-            "machineBlowerGcodeOff": "",
-            "pxPerInch": 72,
-            "dpiBitmap": 300,
-            "toolImagePosition": "BL",
-            "toolUseNumpad": true,
-            "toolVideoDevice": null,
-            "toolVideoPerspective": {
-                "enabled": false,
-                "before": [
-                    170.66666666666666,
-                    384,
-                    682.6666666666666,
-                    384,
-                    682.6666666666666,
-                    96,
-                    170.66666666666666,
-                    96
-                ],
-                "after": [
-                    170.66666666666666,
-                    384,
-                    682.6666666666666,
-                    384,
-                    682.6666666666666,
-                    96,
-                    170.66666666666666,
-                    96
-                ]
-            },
-            "toolVideoLens": {
-                "a": 1,
-                "b": 1,
-                "F": 1,
-                "scale": 1
-            },
-            "toolVideoFov": {
-                "x": 1,
-                "y": 1
-            },
-            "toolVideoResolution": "720p(HD)",
-            "toolWebcamUrl": "",
-            "toolFeedUnits": "mm/s",
-            "gcodeStart": "G21         ; Set units to mm\nG90         ; Absolute positioning\nM3           ; Laser On\nM106       ; Compressor On",
-            "gcodeMillStart": "G21         ; Set units to mm\nG90         ; Absolute positioning\nM3           ; Laser On\nM106       ; Compressor On",
-            "gcodeEnd": "M5                       ;Laser off\nG28.2XY              ; Home X & Y\nM107                   ;Compressor Off",
-            "gcodeMillEnd": "M5                       ;Spindle off\nG28.2XY              ; Home X & Y\nM107                   ;Compressor Off",
-            "gcodeHoming": "G28.2XY     ;Home X & Y",
-            "gcodeToolOn": "",
-            "gcodeToolOff": "",
-            "gcodeSMaxValue": 1,
-            "gcodeToolTestPower": 0,
-            "gcodeToolTestDuration": 0,
-            "connectVia": "USB",
-            "connectBaud": "115200",
-            "jogStepsize": 100,
-            "jogFeedXY": 500,
-            "jogFeedZ": 5,
-            "machineBottomLeftX": 0,
-            "machineBottomLeftY": 0,
-            "toolGridWidth": 800,
-            "toolGridHeight": 600
+  "*FabKit": {
+    "machineLabel": "FabKit",
+    "machineDescription": "Use this if you have an FabKit from FabCreator",
+    "settings": {
+      "firmwareLogo": "fabkit.png",
+      "firmwareURL": "https://community.fabcreator.com/",
+      "machineWidth": 680,
+      "machineHeight": 450,
+      "machineBeamDiameter": 0.1,
+      "machineZEnabled": false,
+      "machineZToolOffset": 0,
+      "machineBlowerEnabled": false,
+      "machineAEnabled": false,
+      "machineBlowerGcodeOn": "",
+      "machineBlowerGcodeOff": "",
+      "pxPerInch": 72,
+      "dpiBitmap": 300,
+      "toolImagePosition": "BL",
+      "toolUseNumpad": true,
+      "toolVideoDevice": null,
+      "toolVideoPerspective": {
+        "enabled": false,
+        "before": [
+          170.66666666666666,
+          384,
+          682.6666666666666,
+          384,
+          682.6666666666666,
+          96,
+          170.66666666666666,
+          96
+        ],
+        "after": [
+          170.66666666666666,
+          384,
+          682.6666666666666,
+          384,
+          682.6666666666666,
+          96,
+          170.66666666666666,
+          96
+        ]
+      },
+      "toolVideoLens": {
+          "a": 1,
+          "b": 1,
+          "F": 1,
+          "scale": 1
+      },
+      "toolVideoFov": {
+          "x": 1,
+          "y": 1
+      },
+      "toolVideoResolution": "720p(HD)",
+      "toolWebcamUrl": "",
+      "toolFeedUnits": "mm/s",
+      "gcodeStart": "G21         ; Set units to mm\nG90         ; Absolute positioning\nM3           ; Laser On\nM106       ; Compressor On",
+      "gcodeMillStart": "G21         ; Set units to mm\nG90         ; Absolute positioning\nM3           ; Laser On\nM106       ; Compressor On",
+      "gcodeEnd": "M5                       ;Laser off\nG28.2XY              ; Home X & Y\nM107                   ;Compressor Off",
+      "gcodeMillEnd": "M5                       ;Spindle off\nG28.2XY              ; Home X & Y\nM107                   ;Compressor Off",
+      "gcodeHoming": "G28.2XY     ;Home X & Y",
+      "gcodeToolOn": "",
+      "gcodeToolOff": "",
+      "gcodeSMaxValue": 1,
+      "gcodeToolTestPower": 0,
+      "gcodeToolTestDuration": 0,
+      "connectVia": "USB",
+      "connectBaud": "115200",
+      "jogStepsize": 100,
+      "jogFeedXY": 500,
+      "jogFeedZ": 5,
+      "machineBottomLeftX": 0,
+      "machineBottomLeftY": 0,
+      "toolGridWidth": 800,
+      "toolGridHeight": 600,
+      "macros": {
+        "*GotoXY0": {
+          "label": "Goto XY zero",
+          "gcode": "G0 X0Y0",
+          "keybinding": "ctrl+f1"
+        },
+        "*ToolOff": {
+          "label": "LASER OFF",
+          "gcode": "M5",
+          "keybinding": "ctrl+f2"
         }
+      }
     }
+  }
 }

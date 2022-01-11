@@ -1,10 +1,10 @@
 {
-  "*gen_other": {
-    "machineLabel": "Generic Other machine",
-    "machineDescription": "A generic machine template for you to customize as you wish",
+  "*gen_rrf": {
+    "machineLabel": "Generic RepRap Machine",
+    "machineDescription": "Use this for machines based on RepRap controller firmware",
     "settings": {
-      "firmwareLogo": "default.png",
-      "firmwareURL": "https://forum.makerforums.info/c/laserweb-cncweb/",
+      "firmwareLogo": "rrf.png",
+      "firmwareURL": "https://github.com/Duet3D/RepRapFirmware/wiki",
       "machineWidth": 300,
       "machineHeight": 200,
       "toolImagePosition": "BL",

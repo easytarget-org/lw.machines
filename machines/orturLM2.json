@@ -2,9 +2,9 @@
   "*orturLM2": {
     "machineLabel": "Ortur Laser Master 2",
     "machineDescription": "Use this if you have an Laser Master 2 from Ortur",
-    "machineAbout": "orturLM2.md",
-    "machineLogo": "orturLM2.png",
     "settings": {
+      "firmwareLogo": "orturLM2.png",
+      "firmwareURL": "https://ortur.tech/olm2/",
       "showMachine": true,
       "machineWidth": 400,
       "machineHeight": 400,
@@ -42,7 +42,7 @@
           "gcode": "G0 X0Y0",
           "keybinding": "ctrl+f1"
         },
-        "*LaserOff": {
+        "*ToolOff": {
           "label": "LASER OFF",
           "gcode": "M5",
           "keybinding": "ctrl+f2"

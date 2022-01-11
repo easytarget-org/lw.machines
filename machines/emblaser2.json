@@ -2,9 +2,9 @@
   "*emblaser2": {
     "machineLabel": "Emblaser 2",
     "machineDescription": "Use this if you have an Emblaser 2 from Darkly Labs",
-    "machineAbout": "emblaser2.md",
-    "machineLogo": "emblaser2.png",
     "settings": {
+      "firmwareLogo": "emblaser2.png",
+      "firmwareURL": "https://darklylabs.com/",
       "machineWidth": 500,
       "machineHeight": 300,
       "machineOriginX": 0,
@@ -106,7 +106,19 @@
       "machineBottomLeftY": 0,
       "machineAEnabled": false,
       "toolGridWidth": 500,
-      "toolGridHeight": 300
+      "toolGridHeight": 300,
+      "macros": {
+        "*GotoXY0": {
+          "label": "Goto XY zero",
+          "gcode": "G0 X0Y0",
+          "keybinding": "ctrl+f1"
+        },
+        "*ToolOff": {
+          "label": "LASER OFF",
+          "gcode": "M5",
+          "keybinding": "ctrl+f2"
+        }
+      }
     }
   }
 }
