@@ -1,35 +1,23 @@
 {
-  "*Grbl-ESP32": {
-    "machineLabel":          "Grbl-ESP32",
-    "machineDescription":    "For machines equipped with GRBL-ESP32 controllers",
+  "*gen_grbl-esp32": {
+    "machineLabel":          "Generic Grbl-ESP32",
+    "machineDescription":    "A template for machines equipped with GRBL-ESP32 controllers",
     "settings": {
       "firmwareURL":         "https://github.com/bdring/Grbl_Esp32/wiki",
-      "firmwareLogo":           "grbl-esp32.png",
+      "firmwareLogo":        "grbl-esp32.png",
       "showMachine":         true,
       "machineWidth":        300,
       "machineHeight":       200,
       "machineBurnWhite":    false,
-      "machineBottomLeftX":  -300,
-      "machineBottomLeftY":  -200,
-      "machineFeedRange":{   "XY": {"min": 1, "max": 50000},
-                             "Z":  {"min": 1, "max": 50000},
-                             "A":  {"min": 1, "max": 50000},
-                             "S":  {"min": 0, "max": 100}
-                         },
-      "gcodeFilename":       "gcode-%y%m%d-%H%M",
-      "gcodeExtension":      ".gcode",
-      "workspaceFilename":   "Laserweb-Workspace-%y%m%d-%H%M",
       "gcodeStart":          "$Spindle/Type=LASER\nG21       ; Set units to mm\nG90       ; Absolute positioning\nM4 S0     ; Laser on, zero power",
       "gcodeMillStart":      "$Spindle/Type=PWM\nG21       ; Set units to mm\nG90       ; Absolute positioning\nM3 S0     ; Spindle on, zero power",
       "gcodeEnd":            "M5        ; Switch Laser off\nM2        ; End\n",
       "gcodeMillEnd":        "M5        ; Switch Spindle off\nM2        ; End\n",
       "gcodeHoming":         "$H",
       "gcodeLaserIntensity": "S",
-      "gcodeSMinValue":      0,
-      "gcodeSMaxValue":      100,
+      "gcodeSMaxValue":      1000,
       "connectBaud":         "115200",
       "connectReset":        true,
-      "connectQuery":        "",
       "macros": {
         "*GotoXY0": {
           "label": "Goto XY zero",

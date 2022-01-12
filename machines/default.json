@@ -1,26 +1,16 @@
 {
-  "*gen_other": {
-    "machineLabel": "Generic Other machine",
+  "*gen_default": {
+    "machineLabel": "Default Generic template",
     "machineDescription": "A generic machine template for you to customize as you wish",
     "settings": {
-      "firmwareLogo": "default.png",
-      "firmwareURL": "https://forum.makerforums.info/c/laserweb-cncweb/",
-      "machineWidth": 300,
-      "machineHeight": 200,
-      "toolImagePosition": "BL",
-      "toolUseNumpad": false,
-      "toolUseVideo": false,
-      "toolWebcamUrl": "",
-      "gcodeStart": "",
-      "gcodeMillStart": "",
-      "gcodeEnd": "",
-      "gcodeMillEnd": "",
-      "gcodeHoming": "",
-      "gcodeToolOn": "",
-      "gcodeToolOff": "",
+      "firmwareLogo":   "default.png",
+      "firmwareURL":    "https://forum.makerforums.info/c/laserweb-cncweb/",
+      "machineWidth":   300,
+      "machineHeight":  200,
+      "gcodeStart":     "; Put your laser startup code here",
+      "gcodeEnd":       "; Put your laser end gcode here",
+      "gcodeHoming":    "; eg $H or G28",
       "gcodeSMaxValue": 1000,
-      "toolGridWidth": 400,
-      "toolGridHeight": 300,
       "macros": {
         "*GotoXY0": {
           "label": "Goto XY zero",

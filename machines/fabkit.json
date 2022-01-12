@@ -1,5 +1,5 @@
 {
-  "*FabKit": {
+  "*fabkit": {
     "machineLabel": "FabKit",
     "machineDescription": "Use this if you have an FabKit from FabCreator",
     "settings": {

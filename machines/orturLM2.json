@@ -1,5 +1,5 @@
 {
-  "*orturLM2": {
+  "*orturlm2": {
     "machineLabel": "Ortur Laser Master 2",
     "machineDescription": "Use this if you have an Laser Master 2 from Ortur",
     "settings": {
@@ -19,9 +19,6 @@
       "machineZEnabled": false,
       "machineAEnabled": false,
       "machineBlowerEnabled": false,
-      "gcodeFilename": "gcode-%y%m%d-%H%M",
-      "gcodeExtension": ".gcode",
-      "workspaceFilename": "Laserweb-Workspace-%y%m%d-%H%M",
       "gcodeStart": "G21         ; Set units to mm\r\nG90         ; Absolute positioning\r\n",
       "gcodeEnd": "M5          ; Switch tool offEnd\r\n",
       "gcodeHoming": "$H",
