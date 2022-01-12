@@ -29,7 +29,7 @@
       },
       "machineZEnabled": true,
       "machineZToolOffset": 0,
-      "machineZStartHeight": "",
+      "machineZStartHeight": 0,
       "machineBlowerEnabled": true,
       "machineBlowerGcodeOn": "M08",
       "machineBlowerGcodeOff": "M09",
@@ -106,19 +106,7 @@
       "machineBottomLeftY": 0,
       "machineAEnabled": false,
       "toolGridWidth": 500,
-      "toolGridHeight": 300,
-      "macros": {
-        "*GotoXY0": {
-          "label": "Goto XY zero",
-          "gcode": "G0 X0Y0",
-          "keybinding": "ctrl+f1"
-        },
-        "*ToolOff": {
-          "label": "LASER OFF",
-          "gcode": "M5",
-          "keybinding": "ctrl+f2"
-        }
-      }
+      "toolGridHeight": 300
     }
   }
 }
