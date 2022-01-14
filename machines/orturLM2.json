@@ -5,7 +5,6 @@
     "settings": {
       "firmwareLogo": "orturLM2.png",
       "firmwareURL": "https://ortur.tech/olm2/",
-      "showMachine": true,
       "machineWidth": 400,
       "machineHeight": 400,
       "machineBottomLeftX": 0,

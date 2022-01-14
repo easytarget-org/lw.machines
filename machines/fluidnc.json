@@ -5,7 +5,6 @@
     "settings": {
       "firmwareLogo":        "fluidnc.png",
       "firmwareURL":         "https://github.com/bdring/FluidNC/wiki",
-      "showMachine":         true,
       "machineWidth":        300,
       "machineHeight":       200,
       "machineBurnWhite":    false,

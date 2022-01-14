@@ -5,7 +5,6 @@
     "settings": {
       "firmwareURL":         "https://github.com/bdring/Grbl_Esp32/wiki",
       "firmwareLogo":        "grbl-esp32.png",
-      "showMachine":         true,
       "machineWidth":        300,
       "machineHeight":       200,
       "machineBurnWhite":    false,
