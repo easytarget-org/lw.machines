@@ -16,7 +16,7 @@
       "gcodeToolOff":   "M5",
       "gcodeSMaxValue": 1000,
       "gcodeLaserIntensitySeparateLine": true,
-      "gcodeGenerator": "marlin",
+      "gcodeGenerator": "legacy-marlin",
       "macros": {
         "*GotoXY0": {
           "label": "Goto XY zero",

@@ -1,13 +1,13 @@
 {
-  "*gen_marlin2": {
-    "machineLabel": "Generic Marlin 2.0.6+ machine",
-    "machineDescription": "Template for machines based on Marlin 2.0.6+ firmware, you must enable 'GCODE_MOTION_MODES' in the configuration.",
+  "*gen_marlin2_continuous": {
+    "machineLabel": "Generic Marlin 2.0.9+ with continuous laser mode",
+    "machineDescription": "Template for machines based on Marlin 2.0.9+ firmware, you must enable 'LASER_FEATURE' and 'GCODE_MOTION_MODES' in the configuration. Applies continuous laser power via 'M3 I'",
     "settings": {
       "firmwareLogo":   "marlin2.png",
       "firmwareURL":    "https://marlinfw.org/",
       "machineWidth":   300,
       "machineHeight":  200,
-      "gcodeStart":     "G21         ; Set units to mm\r\nG90         ; Absolute positioning\r\nS0          ; Set laser power to zero\r\nM3          ; Enable Laser\r\n",
+      "gcodeStart":     "; See https://marlinfw.org/docs/configuration/2.0.9/laser_spindle.html\r\nG21         ; Set units to mm\r\nG90         ; Absolute positioning\r\nS0          ; Set laser power to zero\r\nM3 I        ; Enable Laser (continuous)\r\n",
       "gcodeMillStart": "",
       "gcodeEnd":       "M5          ; Disable Laser\r\n",
       "gcodeMillEnd":   "",
